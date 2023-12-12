@@ -18,8 +18,8 @@ const searchEnemy: Action = {
 const attack: Action = {
   name: 'attack',
   precond: { beingAttacked: false, hasEnemy: true, enemyKilled: false },
-  effects: { beingAttacked: false, enemyKilled: true, hasEnemy: true },
-  cost: 2,
+  effects: { beingAttacked: false, enemyKilled: true, hasEnemy: false },
+  cost: 1,
 };
 
 const defend: Action = {

@@ -1,20 +1,18 @@
-import { actions } from './actions';
-import { Npc } from './npc';
-import { State } from './state';
+import { actions } from './actions'
+import { Npc } from './npc'
+import { State } from './state'
 
 // Definindo o estado inicial do berserker
 const state: State = {
   beingAttacked: false,
-  hasEnemy: true,
+  hasEnemy: false,
   enemyKilled: false,
   // Adicione mais propriedades conforme necessário
 };
 
 // Definindo o objetivo do berserker
 const goal: State = {
-  beingAttacked: false, // Valor irrelevante para o objetivo
-  hasEnemy: false,      // Valor irrelevante para o objetivo
-  enemyKilled: true,    // Objetivo principal
+  enemyKilled: true,    // Objetivo principal  
 };
 
 
