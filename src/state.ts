@@ -3,10 +3,6 @@
  */
 export interface State {
   [key: string]: number | boolean;
-
-  //beingAttacked: boolean;
-  //hasEnemy: boolean;
-  //enemyKilled: boolean;
 }
 
 /**

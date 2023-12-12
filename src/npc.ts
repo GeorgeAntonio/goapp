@@ -10,11 +10,7 @@ export class Npc {
 
   constructor(state: State, actions: Action[]) {
     this._state = {...state}
-    this._goal = {
-      //beingAttacked: false,
-      //hasEnemy: false,
-      //enemyKilled: false,
-    }
+    this._goal = {}
     this._actions = actions
     this._plan = []
   }
