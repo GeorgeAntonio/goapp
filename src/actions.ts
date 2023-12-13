@@ -75,7 +75,7 @@ const regainCounsciousness: Action = {
 const checkCoastClear: Action = {
   name: 'checkCoastClear',
   precond:{    
-    isStunned: false,    
+    isStunned: false,       
   },
   effects:{
     enemyKilled: true,
