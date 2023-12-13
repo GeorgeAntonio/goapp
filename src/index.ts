@@ -10,13 +10,12 @@ const state: State = {
   isStunned: false,
   isCloseEnough: false,
   isLowOnHealth: false,
-  coastClear: false,
   // Adicione mais propriedades conforme necessário
 };
 
 // Definindo o objetivo do berserker
 const goal: State = {
-  coastCleam: true,  // Objetivo principal  
+  enemyKilled: true,  // Objetivo principal  
 };
 
 

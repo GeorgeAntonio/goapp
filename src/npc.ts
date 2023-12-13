@@ -15,7 +15,7 @@ export class Npc {
     this._plan = []
   }
 
-  get state() {
+  get state() {    
     return this._state
   }
   get plan() {
@@ -36,6 +36,7 @@ export class Npc {
       const action = this._plan.shift() as Action
       console.log(`run action: ${action.name}`)
       this._state = next(this.state, action)
+      
     }
   }
 }

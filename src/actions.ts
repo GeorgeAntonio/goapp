@@ -15,8 +15,7 @@ const searchEnemy: Action = {
     enemyKilled: false, 
     hasEnemy: false, 
     isStunned: false, 
-    isLowOnHealth: false,
-    coastClear: false,  
+    isLowOnHealth: false,  
   },
   effects: { 
     beingAttacked: false, 
@@ -54,7 +53,6 @@ const attack: Action = {
   },
   effects: { 
     beingAttacked: false, 
-    enemyKilled: true, 
     hasEnemy: false, 
     isCloseEnough: false, 
     isStunned: true, 
@@ -67,7 +65,7 @@ const regainCounsciousness: Action = {
   precond: { 
     isStunned: true, 
   },
-  effects: { 
+  effects: {     
     isStunned: false, 
     isLowOnHealth: true, 
   },
@@ -76,12 +74,11 @@ const regainCounsciousness: Action = {
 
 const checkCoastClear: Action = {
   name: 'checkCoastClear',
-  precond:{
-    isStunned: false,
-    enemyKilled: true,
+  precond:{    
+    isStunned: false,    
   },
   effects:{
-    coastClear: true,
+    enemyKilled: true,
   },
   cost: 1,
 }
